@@ -6,4 +6,4 @@ button.onclick = function(){
     var span =document.getElementById('count');
     span.innerHTML=counter.toString();
 }
-element.innerHTML =('Iam your father and my name is luffy');
+
