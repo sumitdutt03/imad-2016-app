@@ -22,8 +22,8 @@ app.get('/', function (req, res) {
 
 var pooL = new Pool(config);
 
-app.get('/test-db',function(req,res) {
-    pool.query('SELECT * FROM test', function(err,result){
+app.get('/test-dd',function(req,res) {
+    pool.query('SELECT * FROM SUMIT DUTT', function(err,result){
         
         if(err){
             res.status(500).send(err.toString());
