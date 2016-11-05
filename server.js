@@ -37,7 +37,9 @@ var heading = data.heading;
 var htmlTemplate = `
  <html>
 <head>
-   
+   <style>
+   body {  background-image: url(https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg); } 
+   </style>
 <title>${title}</title>
 <link href="/ui/style.css" rel="stylesheet" />
 <meta name="viewpoint" content="width-device-width,intialscale =1" />
