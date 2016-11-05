@@ -15,7 +15,59 @@ var config = {
 var app = express();
 app.use(morgan('combined'));
 
+var dutt = {
+    title: 'DUTT',
+    date:'sep-06-2016',
+    heading: 'try',
+    content:
+    `
+  <p> trying my self</p>
+`};
 
+
+
+function createTemplate(data){
+var title = data.title;
+var date = data.date;
+var content = data.content;
+var heading = data.heading;
+
+    
+
+var htmTemplatel = `
+ <html>
+<head>
+   
+<title>${title}</title>
+<link href="/ui/style.css" rel="stylesheet" />
+<meta name="viewpoint" content="width-device-width,intialscale =1" />
+
+</head>
+<body>
+    <div class ="container">
+    <div><a href="/">home</a></div>
+    <hr/>
+    <div>
+    <h2>${heading}</h2>
+    </div>
+    <div>
+    ${date}
+    </div>
+    <div>
+${content}
+</div>
+
+</div>
+</body>
+</html>
+
+`;
+return htmlTemplate;
+}
+
+app.get('/dutt', function (req, res) {
+  res.send(createTemplate(dutt));
+});
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
