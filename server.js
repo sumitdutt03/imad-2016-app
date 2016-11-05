@@ -39,36 +39,7 @@ var htmlTemplate = `
 <head>
    <style>
    body {  background-image: url(https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg); } 
-   #menu {
-    width: 90%;
-    height: 35px;
-    font-size: 16px;
-    font-family: Tahoma, Geneva, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    
-    background-color: #8AD9FF;
-        border-radius: 8px;
-}
-#menu ul {
-    height: auto;
-    padding: 8px 0px;
-    margin: 0px;
-}
-#menu li { 
-display: inline; 
-padding: 20px; 
-}
-#menu a {
-    text-decoration: none;
-    color: #00F;
-    padding: 8px 8px 8px 8px;
-}
-#menu a:hover {
-    color: #F90;
-    background-color: #FFF;
-}
-
+   
    </style>
 <title>${title}</title>
 <link href="/ui/style.css" rel="stylesheet" />
@@ -77,14 +48,7 @@ padding: 20px;
 </head>
 <body>
     <div class ="container">
-    <div id="menu">
-<ul>
-<li><a href="/">Home</a></li>
-<li><a href="/dutt">About Us</a></li>
-<li><a href="/test-db">Services</a></li>
-<li><a href="contactus.html">Contact Us</a></li>
-</ul>
-</div>
+    <div><a href="/">home</a></div>
     <hr/>
     <div>
     <h2>${heading}</h2>
