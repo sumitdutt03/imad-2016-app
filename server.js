@@ -23,17 +23,18 @@ app.get('/', function (req, res) {
 var pooL = new Pool(config);
 
 
-app.get('/test-db',function(req,res) {
-   pool.query('SELECT * FROM text',fucntion(err,result) {
+app.get('/test-db',function(req,res) {     
+   pool.query('SELECT * FROM text',fucntion(err,result){
        if(err)
        {
            res.status(500).send(err.toString());
-       }
-       else{
+       } else{
            res.send(JSON.stringify(result));
        }
     });
-});
+     
+    
+}); 
 
 
 
