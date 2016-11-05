@@ -22,18 +22,21 @@ app.get('/', function (req, res) {
 
 var pooL = new Pool(config);
 
-app.get('/test-dd',function(req,res) {
-    pool.query('SELECT * FROM SUMIT DUTT', function(err,result){
-        
-        if(err){
-            res.status(500).send(err.toString());
-        } 
-        else{
-            res.send(JSON.stringify(result.rows));
-        }
+
+app.get('/test-db',function(req,res) {
+   pool.query('SELECT * FROM text',fucntion(err,result) {
+       if(err)
+       {
+           res.status(500).send(err.toString());
+       }
+       else{
+           res.send(JSON.stringify(result));
+       }
     });
-    
 });
+
+
+
 
 var counter = 0;
 app.get('/counter', function (req, res) {
