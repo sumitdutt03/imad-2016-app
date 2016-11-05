@@ -34,7 +34,7 @@ var heading = data.heading;
 
     
 
-var htmTemplate = `
+var htmlTemplate = `
  <html>
 <head>
    
