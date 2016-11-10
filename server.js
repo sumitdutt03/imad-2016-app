@@ -45,7 +45,7 @@ var htmlTemplate = `
 <title>${title}</title>
 <link href="/ui/style.css" rel="stylesheet" />
 <meta name="viewpoint" content="width-device-width,intialscale =1" />
-<link rel="import" href="ui/index.html">
+<link rel="import" href="/index.html">
 </head>
 <body>
     <div class ="container" id='con'>
