@@ -44,14 +44,14 @@ var htmlTemplate = `
 <title>${title}</title>
 <link href="/ui/style.css" rel="stylesheet" />
 <meta name="viewpoint" content="width-device-width,intialscale =1" />
-
+#head{color:white;}
 </head>
 <body>
     <div class ="container">
     <div><a href="/">home</a></div>
     <hr/>
     <div>
-    <h2>${heading}</h2>
+    <h2 id='head'>${heading}</h2>
     </div>
     <div>
     ${date.toDateString()}
