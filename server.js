@@ -39,12 +39,12 @@ var htmlTemplate = `
 <head>
    <style>
    body {  background-image: url(https://i.ytimg.com/vi/F3I0wRGAkxo/maxresdefault.jpg); } 
-   
+   #head{color:white;}
    </style>
 <title>${title}</title>
 <link href="/ui/style.css" rel="stylesheet" />
 <meta name="viewpoint" content="width-device-width,intialscale =1" />
-#head{color:white;}
+
 </head>
 <body>
     <div class ="container">
