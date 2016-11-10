@@ -38,7 +38,7 @@ var htmlTemplate = `
  <html>
 <head>
    <style>
-   body {  background-image: url(http://www.intrawallpaper.com/static/images/White-Background-9B1.jpg); } 
+   body {  background-image: url(https://i.ytimg.com/vi/F3I0wRGAkxo/maxresdefault.jpg); } 
    
    </style>
 <title>${title}</title>
