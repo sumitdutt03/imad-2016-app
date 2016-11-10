@@ -72,6 +72,12 @@ return htmlTemplate;
 app.get('/dutt', function (req, res) {
   res.send(createTemplate(dutt));
 });
+
+//testing for article 
+
+
+
+//
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
@@ -79,12 +85,21 @@ app.get('/', function (req, res) {
 var pool = new Pool(config);
 
 
-app.get('/test-db', function (req, res) {
-    pool.query('SELECT * FROM test', function(err,result){
+app.get('/article/:articlename', function (req, res) {
+    pool.query("SELECT * FROM table where title = '"+req.params.articlename+"'", function(err,result){
         if(err){
             res.status(500).send('something wrong');
         }else{
-            res.send(JSON.stringify(result.rows));
+            if(result.rows.length ===0){
+            res.status(404).send('Article not found') ;
+            }
+            else{
+                var articledata = result.rows[0];
+                res.send(createTemplate(articledata));
+                
+            }
+            
+            
         }
     });
     
