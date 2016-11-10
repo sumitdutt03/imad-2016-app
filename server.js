@@ -40,6 +40,7 @@ var htmlTemplate = `
    <style>
    body {  background-image: url(https://i.ytimg.com/vi/F3I0wRGAkxo/maxresdefault.jpg); } 
    #head{color:white;}
+   .con{color:white;}
    </style>
 <title>${title}</title>
 <link href="/ui/style.css" rel="stylesheet" />
@@ -47,7 +48,7 @@ var htmlTemplate = `
 
 </head>
 <body>
-    <div class ="container">
+    <div class ="container" id='con'>
     <div><a href="/">home</a></div>
     <hr/>
     <div>
