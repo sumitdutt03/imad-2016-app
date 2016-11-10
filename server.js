@@ -38,7 +38,7 @@ var htmlTemplate = `
  <html>
 <head>
    <style>
-   body {  background-image: url(https://static.pexels.com/photos/36487/above-adventure-aerial-air.jpg); } 
+   body {  background-image: url(http://www.intrawallpaper.com/static/images/White-Background-9B1.jpg); } 
    
    </style>
 <title>${title}</title>
