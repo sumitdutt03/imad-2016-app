@@ -52,30 +52,7 @@ padding: 20px;
 <h2>Todays blog-article</h2>    
 <hr/>    
 <div>
-    <script type="text/javascript" src="/server.js"></script>
-        <script>
-        app.get('/', function (req, res) {
-            var a = 'one';
-    pool.query("SELECT * FROM article WHERE title = '"+a+"'", function(err,result){
-        if(err){
-            res.status(500).send('something wrong');
-        }else{
-            if(result.rows.length ===0){
-            res.status(404).send('Article not found') ;
-            }
-            else{
-                var articledata = result.rows[0];
-                res.send(createTemplate(articledata));
-                
-            }
-            
-            
-        }
-    });
     
-});
-        
-    </script>
 </div>
 <div>
     <h2 style="color:#069"> Intro Information About IMAD internship companies </h2>
