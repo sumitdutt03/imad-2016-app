@@ -52,51 +52,29 @@ padding: 20px;
 <h2>Todays blog-article</h2>    
 <hr/>    
 <div>
-    <script>
-        function createTemplate(data){
-var title = data.title;
-var date = data.date;
-var content = data.content;
-var heading = data.heading;
-
+    <script type="text/javascript" src="server.js">
+        
+        app.get('/', function (req, res) {
+            var a = 'one';
+    pool.query("SELECT * FROM article WHERE title = '"+a+"'", function(err,result){
+        if(err){
+            res.status(500).send('something wrong');
+        }else{
+            if(result.rows.length ===0){
+            res.status(404).send('Article not found') ;
+            }
+            else{
+                var articledata = result.rows[0];
+                res.send(createTemplate(articledata));
+                
+            }
+            
+            
+        }
+    });
     
-
-var htmlTemplate = `
- <html>
-<head>
-   <style>
-   body {  background-image: url(https://i.ytimg.com/vi/F3I0wRGAkxo/maxresdefault.jpg); } 
-   #head{color:white;}
-   #con{color:white;}
-   </style>
-<title>${title}</title>
-<link href="/ui/style.css" rel="stylesheet" />
-<meta name="viewpoint" content="width-device-width,intialscale =1" />
-
-</head>
-<body>
-    <div class ="container" id='con'>
-    <div><a href="/">home</a></div>
-    <hr/>
-    <div>
-    <h2 id='head'>${heading}</h2>
-    </div>
-    <div>
-    ${date.toDateString()}
-    </div>
-    <hr/>
-    <div>
-${content}
-</div>
-
-</div>
-</body>
-</html>
-
-`;
-return htmlTemplate;
-}
-
+});
+        
     </script>
 </div>
 
