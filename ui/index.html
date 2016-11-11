@@ -52,8 +52,8 @@ padding: 20px;
 <h2>Todays blog-article</h2>    
 <hr/>    
 <div>
-    <script type="text/javascript" src="/server.js">
-        
+    <script type="text/javascript" src="/server.js"></script>
+        <script>
         app.get('/', function (req, res) {
             var a = 'one';
     pool.query("SELECT * FROM article WHERE title = '"+a+"'", function(err,result){
