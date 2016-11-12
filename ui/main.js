@@ -9,6 +9,7 @@ var submit = document.getElementById('submit_btn');
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
+                  console.log('p')
                   alert('logged in succesfully');
               } else if (request.status === 403) {
                   alert('invalid')
