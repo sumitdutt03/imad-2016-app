@@ -9,18 +9,13 @@ var submit = document.getElementById('submit_btn');
           if (request.readyState === XMLHttpRequest.DONE) {
               // Take some action
               if (request.status === 200) {
-                  submit.value = 'Sucess!';
+                  alert('logged in succesfully');
               } else if (request.status === 403) {
-                  submit.value = 'Invalid credentials. Try again?';
+                  alert('invalid')
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
-                  submit.value = 'Login';
-              } else {
-                  alert('Something went wrong on the server');
-                  submit.value = 'Login';
-              }
-              loadLogin();
-          }  
+                  
+              }       }  
           // Not done yet
         };
 
