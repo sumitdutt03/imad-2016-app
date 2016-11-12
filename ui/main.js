@@ -15,7 +15,8 @@ var submit = document.getElementById('submit_btn');
               } else if (request.status === 500) {
                   alert('Something went wrong on the server');
                   
-              }       }  
+              }      
+              }  
           // Not done yet
         };
 
