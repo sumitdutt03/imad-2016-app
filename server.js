@@ -59,7 +59,6 @@ var htmlTemplate = `
 <body>
     <div class ="container" id='con'>
     <div><a href="/" style="color:red" >home</a></div>
-    <div>< a href="http://sumitdutt03.imad.hasura-app.io/article/two" style="color:red" >Previous</a></div>
     
     <hr/>
     <div>
