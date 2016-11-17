@@ -49,7 +49,7 @@ var htmlTemplate = `
    body {  background-image: url(https://i.ytimg.com/vi/F3I0wRGAkxo/maxresdefault.jpg); } 
    #head{color:white;}
    #con{color:white;}
-   #pa{float:right;}
+  //// #pa{float:right;}
    </style>
 <title>${title}</title>
 <link href="/ui/style.css" rel="stylesheet" />
@@ -59,7 +59,7 @@ var htmlTemplate = `
 <body>
     <div class ="container" id='con'>
     <div><a href="/" style="color:red" >home</a></div>
-    <div id="pa"><a href="/:${PA}" style="color:red" >Previous</a></div>
+    //////<div id="pa"><a href="/:${PA}" style="color:red" >Previous</a></div>
     <hr/>
     <div>
     <h2 id='head'>${heading}</h2>
