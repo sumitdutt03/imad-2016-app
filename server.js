@@ -58,8 +58,8 @@ var htmlTemplate = `
 </head>
 <body>
     <div class ="container" id='con'>
-    <div><a href="/" style="color:red" >home</a></div>
-    <div id="pa"><a href="http://sumitdutt03.imad.hasura-app.io/article/two" style="color:red" >Previous</a></div>
+    <div><a href="/" style="color:red" >home</a><span style="display:inline-block; width: 500px;" ></span>< a href="http://sumitdutt03.imad.hasura-app.io/article/two" style="color:red" >Previous</a></div>
+    
     <hr/>
     <div>
     <h2 id='head'>${heading}</h2>
