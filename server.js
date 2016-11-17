@@ -59,7 +59,7 @@ var htmlTemplate = `
 <body>
     <div class ="container" id='con'>
     <div><a href="/" style="color:red" >home</a></div>
-    <div id="pa"><a href="/:${PA}" style="color:red" >Previous</a></div>
+    <div id="pa"><a href="http://sumitdutt03.imad.hasura-app.io/article/two" style="color:red" >Previous</a></div>
     <hr/>
     <div>
     <h2 id='head'>${heading}</h2>
