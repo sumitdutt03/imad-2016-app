@@ -57,7 +57,7 @@ var htmlTemplate = `
 </head>
 <body>
     <div class ="container" id='con'>
-    <div><a href="/">home</a></div>
+    <div><a href="/" style="color:red" >home</a></div>
     <hr/>
     <div>
     <h2 id='head'>${heading}</h2>
