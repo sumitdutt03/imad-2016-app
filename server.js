@@ -72,7 +72,7 @@ var htmlTemplate = `
 ${content}
 </div>
 </div>
-
+<!-- Begin Comments JavaScript Code --><script type="text/javascript" async>function ajaxpath_582fe7d2dc756(url){return window.location.href == '' ? url : url.replace('&s=','&s=' + escape(window.location.href));}(function(){document.write('<div id="fcs_div_582fe7d2dc756"></div>');fcs_582fe7d2dc756=document.createElement('script');fcs_582fe7d2dc756.type="text/javascript";fcs_582fe7d2dc756.src=ajaxpath_582fe7d2dc756((document.location.protocol=="https:"?"https:":"http:")+"//www.freecommentscript.com/GetComments2.php?p=582fe7d2dc756&s=#!582fe7d2dc756");setTimeout("document.getElementById('fcs_div_582fe7d2dc756').appendChild(fcs_582fe7d2dc756)",1);})();</script><noscript></noscript>
 </body>
 </html>
 `;
