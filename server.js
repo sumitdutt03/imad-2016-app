@@ -1,3 +1,21 @@
+Skip to content
+This repository
+Search
+Pull requests
+Issues
+Gist
+ @sumitdutt03
+ Unwatch 1
+  Star 0
+  Fork 4,159 sumitdutt03/imad-2016-app
+forked from hasura-imad/imad-2016-app
+ Code  Pull requests 0  Projects 0  Wiki  Pulse  Graphs  Settings
+Tree: 3e500e3a24 Find file Copy pathimad-2016-app/server.js
+177c28b  2 days ago
+@sumitdutt03 sumitdutt03 [imad-console] Updates server.js
+2 contributors @sumitdutt03 @coco98
+RawBlameHistory     
+248 lines (192 sloc)  6.11 KB
 var express = require('express');
 var morgan = require('morgan');
 var path = require('path');
@@ -54,7 +72,6 @@ var htmlTemplate = `
 <title>${title}</title>
 <link href="/ui/style.css" rel="stylesheet" />
 <meta name="viewpoint" content="width-device-width,intialscale =1" />
-
 </head>
 <body>
     <div class ="container" id='con'>
@@ -72,11 +89,9 @@ var htmlTemplate = `
     <div>
 ${content}
 </div>
-
 </div>
 </body>
 </html>
-
 `;
 return htmlTemplate;
 }
@@ -230,8 +245,7 @@ app.get('/ui/style.css', function (req, res) {
 });
 app.get('/sumit1', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'sumit1.html'));
-
-
+});
 
 app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
